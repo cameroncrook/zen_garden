@@ -94,6 +94,9 @@ section {
   margin: 0;
   flex: 1 1 25%;
 }
+.colors > figure img {
+  max-width: 100%;
+}
 
 .swatch {
   width: 100%;
