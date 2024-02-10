@@ -1,3 +1,9 @@
+@use 'variables' as *;
+
+body{
+  background-color:$background-color;
+}
 .intro {
   padding: 5%;
 }
+

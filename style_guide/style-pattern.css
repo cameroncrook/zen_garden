@@ -7,6 +7,7 @@ h4 {
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif;
   background: #000000;
   color: #fff;
   display: inline-block;
@@ -58,6 +59,18 @@ a:hover {
   border-color: #000000;
 }
 
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 13vw;
+  }
+  h2 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .summary {
+    text-align: right;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -138,6 +151,4 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-}
-
-/*# sourceMappingURL=style-pattern.css.map */
+}/*# sourceMappingURL=style-pattern.css.map */

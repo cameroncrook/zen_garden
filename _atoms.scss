@@ -31,6 +31,7 @@ h4 {
   margin: 0;
 }
 h1 {
+  font-family: $fonts-body;
   background: $accent1;
   color: $text-light;
   display: inline-block;
@@ -74,4 +75,18 @@ a {
 }
 a:hover {
   border-color: $accent1;
+}
+@media screen and (max-width: $mobile){
+
+
+  h1{
+    font-size:13vw;
+  }
+  h2{
+    font-size:6vw;
+    text-align: center;
+  }
+  .summary{
+    text-align:right;
+  }
 }
