@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
+
 h2,
 h3,
 h4 {
@@ -18,7 +18,8 @@ h1 {
 
 h2 {
   color: #fff;
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -26,7 +27,8 @@ h2 {
 
 h3 {
   font-size: 2.25em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
@@ -34,7 +36,8 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
@@ -59,7 +62,7 @@ a:hover {
   border-color: #000000;
 }
 
-[role=banner] > h1 {
+[role=banner]>h1 {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -73,11 +76,13 @@ a:hover {
   color: #fff;
   padding: 15% 0;
 }
+
 .summary p:last-child {
   border-top: 1px solid #000000;
   margin-top: 1em;
   padding-top: 1.5em;
 }
+
 .summary a {
   color: #fff;
 }
@@ -93,79 +98,13 @@ a:hover {
   padding: 5%;
 }
 
-html,
-body,
-.main-supporting {
-  margin: 0px;
-}
-
-.benefits,
-.participation {
-  padding: 30px;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-  color: #1a181e;
-}
-.benefits p,
-.participation p {
-  font-size: medium;
-  font-family: "Montserrat";
-}
-.benefits h3,
-.participation h3 {
-  font-size: larger;
-  font-family: "Oswald";
-  text-transform: uppercase;
-}
-.benefits a,
-.participation a {
-  color: #D4AF37;
-}
-
 .requirements {
-  padding: 30px;
-  background-color: #25232b;
-  border-radius: 20px;
-  color: #f7f7f7;
-  margin: 10px;
-  box-shadow: 5px 5px 10px #161c1c;
+  background: black;
+  color: #fff;
 }
-.requirements p {
-  font-size: medium;
-  font-family: "Montserrat";
-}
+
 .requirements h3 {
-  font-size: larger;
-  font-family: "Oswald";
-  text-transform: uppercase;
-}
-.requirements a {
-  color: #D4AF37;
-}
-
-footer,
-.sidebar {
-  background: #1a181e;
-  color: #f7f7f7;
-  padding: 20px;
-}
-footer a,
-.sidebar a {
-  color: #D4AF37;
-}
-
-.design-selection h3,
-.zen-resources h3,
-.design-archives h3 {
-  font-family: "Oswald";
-  font-size: medium;
-}
-.design-selection li,
-.zen-resources li,
-.design-archives li {
-  font-family: "Montserrat";
-  font-size: smaller;
-  list-style: none;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
