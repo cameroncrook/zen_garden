@@ -1,4 +1,73 @@
-@use 'atoms' as a;
-@use 'molecules' as m;
-@use 'organisms' as o;
-@use 'variables' as var;
+@use "atoms" as a;
+@use "molecules" as m;
+@use "organisms" as o;
+@use "variables" as var;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
+
+html,
+body,
+.main-supporting {
+  margin: 0px;
+}
+.benefits,
+.participation {
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  color: #1a181e;
+  p {
+    font-size: medium;
+    font-family: "Montserrat";
+  }
+  h3 {
+    font-size: larger;
+    font-family: "Oswald";
+    text-transform: uppercase;
+  }
+  a {
+    color: var.$primary;
+  }
+}
+.requirements {
+  padding: 30px;
+  background-color: #25232b;
+  border-radius: 20px;
+  color: #f7f7f7;
+  margin: 10px;
+  box-shadow: 5px 5px 10px #161c1c;
+
+  p {
+    font-size: medium;
+    font-family: "Montserrat";
+  }
+  h3 {
+    font-size: larger;
+    font-family: "Oswald";
+    text-transform: uppercase;
+  }
+  a {
+    color: var.$primary;
+  }
+}
+footer,
+.sidebar {
+  background: #1a181e;
+  color: #f7f7f7;
+  padding: 20px;
+  a {
+    color: var.$primary;
+  }
+}
+.design-selection,
+.zen-resources,
+.design-archives {
+  h3 {
+    font-family: "Oswald";
+    font-size: medium;
+  }
+  li {
+    font-family: "Montserrat";
+    font-size: smaller;
+    list-style: none;
+  }
+}
