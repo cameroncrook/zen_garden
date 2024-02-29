@@ -25,3 +25,22 @@
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
 }
+
+// Supporting
+.explanation {
+  // sizing and spacing
+  padding: 30px;
+  margin: 10px;
+  margin-bottom: 25px;
+
+  // styles
+  background-color: $accent3;
+  color: $text-light;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #161c1c;
+
+  h3 {
+    font-size: larger;
+    text-transform: uppercase;
+  }
+}

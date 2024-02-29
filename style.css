@@ -89,6 +89,20 @@ a:hover {
   padding: 5% 5% 5% 30%;
 }
 
+.explanation {
+  padding: 30px;
+  margin: 10px;
+  margin-bottom: 25px;
+  background-color: #25232b;
+  color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #161c1c;
+}
+.explanation h3 {
+  font-size: larger;
+  text-transform: uppercase;
+}
+
 .intro {
   padding: 5%;
 }
