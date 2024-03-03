@@ -111,28 +111,24 @@ html,
 body,
 .main-supporting {
   margin: 0px;
-}
-
-.benefits,
-.participation {
-  padding: 30px;
+  box-sizing: border-box;
   background-color: #f7f7f7;
-  border-radius: 20px;
-  color: #1a181e;
 }
-.benefits p,
-.participation p {
-  font-size: medium;
-  font-family: "Montserrat";
+html p,
+body p,
+.main-supporting p {
+  font-family: "Montserrat", sans-serif;
 }
-.benefits h3,
-.participation h3 {
+html h3,
+body h3,
+.main-supporting h3 {
   font-size: larger;
-  font-family: "Oswald";
+  font-family: "Oswald", serif;
   text-transform: uppercase;
 }
-.benefits a,
-.participation a {
+html a,
+body a,
+.main-supporting a {
   color: #d4af37;
 }
 
@@ -143,18 +139,6 @@ body,
   color: #f7f7f7;
   margin: 10px;
   box-shadow: 5px 5px 10px #161c1c;
-}
-.requirements p {
-  font-size: medium;
-  font-family: "Montserrat", sans-serif;
-}
-.requirements h3 {
-  font-size: larger;
-  font-family: "Oswald", serif;
-  text-transform: uppercase;
-}
-.requirements a {
-  color: #d4af37;
 }
 
 footer,
@@ -180,6 +164,39 @@ footer a,
   font-family: "Montserrat", sans-serif;
   font-size: smaller;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    margin-inline: 2rem;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+  .benefits:hover,
+  .participation:hover {
+    transform: scale(1.03);
+  }
+  .benefits,
+  .participation {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #1a181e;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  .benefits h3,
+  .participation h3 {
+    font-size: larger;
+    font-family: "Oswald";
+    text-transform: uppercase;
+  }
+  .benefits a,
+  .participation a {
+    color: #d4af37;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
