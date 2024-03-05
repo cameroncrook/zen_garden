@@ -34,18 +34,8 @@
 
 
 @media screen and (max-width: $mobile){
-.page-wrapper{
-  background-color:$primary;
-}
 
-.preamble{
-  box-shadow: $shadow-elevation-left;
-}
-.main.supporting{
-  margin-left:5%;
-  margin-right:-2%;
-  padding-left:10%;
-  box-shadow: $shadow-elevation-high;
-}
-
+  .summary{
+    padding: 5% 0;
+  }
 }

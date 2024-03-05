@@ -7,3 +7,32 @@ body{
   padding: 5%;
 }
 
+@media screen and (max-width: $mobile){
+  .page-wrapper{
+    background-color:$primary;
+    padding-bottom:10px;
+  }
+  
+  .preamble{
+    box-shadow: $shadow-elevation-left;
+  }
+  .main.supporting{
+    margin-left:5%;
+    margin-right:-2%;
+    padding-left:10%;
+    box-shadow: $shadow-elevation-high;
+  }
+  [role=banner] > h1 {
+    margin:auto;
+    text-align:center;
+    padding:0;
+    background-color:$primary;
+    border: 5px solid black;
+    box-shadow: $shadow-elevation-main;
+  }
+  h2{
+    padding-top:30px;
+  }
+  
+  
+  }
