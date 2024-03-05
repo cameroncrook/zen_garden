@@ -112,10 +112,14 @@ a:hover {
   .page-wrapper {
     background-color: #D4AF37;
   }
+  .preamble {
+    box-shadow: 7px 7px 10px 3px hsl(0, 0%, 20%);
+  }
   .main.supporting {
     margin-left: 5%;
     margin-right: -2%;
     padding-left: 10%;
+    box-shadow: -7px 7px 10px 2px hsl(0, 0%, 20%);
   }
 }
 body {
