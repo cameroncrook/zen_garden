@@ -75,3 +75,18 @@ a {
 a:hover {
   border-color: $accent1;
 }
+@media screen and (max-width: $mobile){
+
+
+  h1{
+    font-size:13vw;
+  }
+  h2{
+    font-size:6vw;
+    text-align: center;
+  }
+  .summary{
+    text-align:right;
+    padding: 10% 0;
+  }
+}

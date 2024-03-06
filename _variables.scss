@@ -14,3 +14,9 @@ $fonts-body: "Montserrat", sans-serif;
 $fonts-headline: "Oswald", serif;
 $text-dark: #1a181e;
 $text-light: #f7f7f7;
+
+$mobile:425px;
+
+$shadow-elevation-high: -7px 7px 10px 2px hsl( 0deg 0% 20% / 1);
+$shadow-elevation-left: 7px 7px 10px 3px hsl(0deg 0% 20% / 1);
+$shadow-elevation-main: 0px 15px 10px 2px hsl(0, 0%, 20);

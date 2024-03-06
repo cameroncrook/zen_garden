@@ -43,4 +43,11 @@
     font-size: larger;
     text-transform: uppercase;
   }
+
+}
+@media screen and (max-width: $mobile){
+
+  .summary{
+    padding: 5% 0;
+  }
 }
