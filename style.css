@@ -7,6 +7,7 @@ h4 {
 }
 
 h1 {
+  font-family: "Oswald", serif;
   background: #1a181e;
   color: #f7f7f7;
   display: inline-block;
@@ -95,7 +96,7 @@ a:hover {
   background-color: #25232b;
   color: #f7f7f7;
   border-radius: 20px 20px 0 0;
-  box-shadow: 5px 10px 10px #161c1c;
+  box-shadow: 5px 9px 10px #161c1c;
 }
 
 .explanation {
@@ -118,6 +119,28 @@ a:hover {
 
 .summary {
   background-color: #d4af37;
+}
+
+[role=banner] > h1 {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+/*
+[role=banner] > h1:after{
+  content:"";
+  height:100%;
+  left:0;
+  top:0;
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: 1;
+}*/
+[role=banner] > h1:hover {
+  background-color: #508991;
 }
 
 html,
