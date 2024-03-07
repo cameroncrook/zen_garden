@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
 h2,
 h3,
 h4 {
@@ -17,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #f7f7f7;
+  color: #1a181e;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
@@ -79,7 +78,7 @@ a:hover {
   padding-top: 1.5em;
 }
 .summary a {
-  color: #f7f7f7;
+  color: #1a181e;
 }
 
 .preamble {
@@ -197,6 +196,4 @@ footer a,
   .participation a {
     color: #d4af37;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */

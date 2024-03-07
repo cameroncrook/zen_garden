@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
 h2,
 h3,
 h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "Oswald", serif;
   margin: 0;
 }
 
 h1 {
-  background: #000000;
-  color: #fff;
+  background: #1a181e;
+  color: #f7f7f7;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #1a181e;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
@@ -49,13 +49,13 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #1a181e;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
-  border-color: #000000;
+  border-color: #1a181e;
 }
 
 * {
@@ -70,8 +70,8 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 85%;
-  color: #333;
-  background-color: #D4AF37;
+  color: #1a181e;
+  background-color: #d4af37;
   margin: 0;
   padding: 1em;
 }
@@ -105,19 +105,19 @@ section {
 }
 
 .primary {
-  background-color: #D4AF37;
+  background-color: #d4af37;
 }
 
 .accent1 {
-  background-color: #000000;
+  background-color: #1a181e;
 }
 
 .accent2 {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .text-dark {
-  background-color: #333;
+  background-color: #1a181e;
 }
 
 .element {
@@ -130,14 +130,12 @@ section {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #333;
+  color: #1a181e;
 }
 
 .uppercase-light {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fff;
-}
-
-/*# sourceMappingURL=style-pattern.css.map */
+  color: #f7f7f7;
+}/*# sourceMappingURL=style-pattern.css.map */
