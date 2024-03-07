@@ -1,7 +1,10 @@
 @use 'variables' as *;
 
 .intro {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
+}
+.summary{
+  background-color: $primary;
 }
 
 html,
@@ -89,5 +92,5 @@ footer,
       color: $primary;
     }
   }
-  // End Larger CSS
+
 }
