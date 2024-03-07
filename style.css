@@ -1,6 +1,202 @@
-@use "atoms" as a;
-@use "molecules";
-@use "organisms" as o;
-@use "variables" as var;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
+h2,
+h3,
+h4 {
+  font-family: "Oswald", serif;
+  margin: 0;
+}
+
+h1 {
+  background: #1a181e;
+  color: #f7f7f7;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #f7f7f7;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #1a181e;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #1a181e;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  border-top: 1px solid #1a181e;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #f7f7f7;
+}
+
+.preamble {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a181e;
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.explanation {
+  padding: 30px;
+  margin: 10px;
+  margin-bottom: 25px;
+  background-color: #25232b;
+  color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #161c1c;
+}
+.explanation h3 {
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.intro {
+  padding: 5%;
+}
+
+html,
+body,
+.main-supporting {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+html p,
+body p,
+.main-supporting p {
+  font-family: "Montserrat", sans-serif;
+}
+html h3,
+body h3,
+.main-supporting h3 {
+  font-size: larger;
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+}
+html a,
+body a,
+.main-supporting a {
+  color: #d4af37;
+}
+
+.requirements {
+  padding: 30px;
+  background-color: #25232b;
+  border-radius: 20px;
+  color: #f7f7f7;
+  margin: 10px;
+  box-shadow: 5px 5px 10px #161c1c;
+}
+
+footer,
+.sidebar {
+  background: #1a181e;
+  color: #f7f7f7;
+  padding: 20px;
+}
+footer a,
+.sidebar a {
+  color: #d4af37;
+}
+
+.design-selection h3,
+.zen-resources h3,
+.design-archives h3 {
+  font-family: "Oswald", serif;
+  font-size: medium;
+}
+.design-selection li,
+.zen-resources li,
+.design-archives li {
+  font-family: "Montserrat", sans-serif;
+  font-size: smaller;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    margin-inline: 2rem;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+  .benefits:hover,
+  .participation:hover {
+    transform: scale(1.03);
+  }
+  .benefits,
+  .participation {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #1a181e;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  .benefits h3,
+  .participation h3 {
+    font-size: larger;
+    font-family: "Oswald";
+    text-transform: uppercase;
+  }
+  .benefits a,
+  .participation a {
+    color: #d4af37;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
