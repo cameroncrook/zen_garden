@@ -1,7 +1,32 @@
 @use 'variables' as *;
 
 .intro {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
+}
+.summary{
+  background-color: $primary;
+}
+
+[role=banner] > h1{
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  transition:all 1s;
+}
+/*
+[role=banner] > h1:after{
+  content:"";
+  height:100%;
+  left:0;
+  top:0;
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: 1;
+}*/
+[role=banner] > h1:hover{
+  background-color:$background-color;
+  //color:$text-dark;
 }
 
 html,
@@ -89,5 +114,5 @@ footer,
       color: $primary;
     }
   }
-  // End Larger CSS
+
 }
