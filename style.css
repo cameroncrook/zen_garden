@@ -113,6 +113,14 @@ a:hover {
   text-transform: uppercase;
 }
 
+.participation {
+  padding: 30px;
+}
+
+.benefits {
+  padding: 30px;
+}
+
 .intro {
   padding: 5% 5% 0 5%;
 }
@@ -233,4 +241,6 @@ footer a,
   .participation a {
     color: #d4af37;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
