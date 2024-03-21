@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
+
 h2,
 h3,
 h4 {
@@ -18,7 +18,8 @@ h1 {
 
 h2 {
   color: #f7f7f7;
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -26,7 +27,8 @@ h2 {
 
 h3 {
   font-size: 2.25em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
@@ -34,7 +36,8 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
@@ -59,7 +62,7 @@ a:hover {
   border-color: #1a181e;
 }
 
-[role=banner] > h1 {
+[role=banner]>h1 {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -73,11 +76,13 @@ a:hover {
   color: #f7f7f7;
   padding: 15% 0;
 }
+
 .summary p:last-child {
   border-top: 1px solid #1a181e;
   margin-top: 1em;
   padding-top: 1.5em;
 }
+
 .summary a {
   color: #f7f7f7;
 }
@@ -98,6 +103,7 @@ a:hover {
   border-radius: 20px;
   box-shadow: 5px 5px 10px #161c1c;
 }
+
 .explanation h3 {
   font-size: larger;
   text-transform: uppercase;
@@ -114,11 +120,13 @@ body,
   box-sizing: border-box;
   background-color: #f7f7f7;
 }
+
 html p,
 body p,
 .main-supporting p {
   font-family: "Montserrat", sans-serif;
 }
+
 html h3,
 body h3,
 .main-supporting h3 {
@@ -126,18 +134,30 @@ body h3,
   font-family: "Oswald", serif;
   text-transform: uppercase;
 }
+
 html a,
 body a,
 .main-supporting a {
   color: #d4af37;
 }
 
+.benefits,
 .requirements {
   padding: 30px;
-  background-color: #25232b;
   border-radius: 20px;
-  color: #f7f7f7;
   margin: 10px;
+  margin-bottom: 25px;
+}
+
+.benefits {
+  background-color: #fff;
+  color: #1a181e;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.requirements {
+  background-color: #25232b;
+  color: #f7f7f7;
   box-shadow: 5px 5px 10px #161c1c;
 }
 
@@ -147,6 +167,7 @@ footer,
   color: #f7f7f7;
   padding: 20px;
 }
+
 footer a,
 .sidebar a {
   color: #d4af37;
@@ -158,6 +179,7 @@ footer a,
   font-family: "Oswald", serif;
   font-size: medium;
 }
+
 .design-selection li,
 .zen-resources li,
 .design-archives li {
@@ -166,20 +188,48 @@ footer a,
   list-style: none;
 }
 
+.design-selection .designer-name,
+.zen-resources .designer-name,
+.design-archives .designer-name {
+  color: #f7f7f7;
+}
+
 @media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .design-selection {
+    width: auto;
+  }
+
+  .zen-resources {
+    grid-column: 2/3;
+  }
+
   .container {
     display: flex;
     margin-inline: 2rem;
     gap: 2rem;
     margin-block: 2rem;
   }
+
   .benefits:hover,
   .participation:hover {
     transform: scale(1.03);
   }
+
+  .requirements,
+  .container,
+  .explanation {
+    margin-inline: 4rem;
+  }
+
   .benefits,
   .participation {
     flex: 1;
+    margin: 0px;
     padding: 30px;
     background-color: #fff;
     border-radius: 20px;
@@ -187,15 +237,46 @@ footer a,
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
   }
+
   .benefits h3,
   .participation h3 {
     font-size: larger;
     font-family: "Oswald";
     text-transform: uppercase;
   }
+
   .benefits a,
   .participation a {
     color: #d4af37;
+  }
+
+  .design-selection ul {
+    display: flex;
+    line-height: 75px;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+  }
+
+  .design-selection:hover ul,
+  .design-selection li:hover ul {
+    animation-play-state: paused;
+  }
+
+  .design-selection li {
+    font-size: large;
+    margin-inline: 25px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 

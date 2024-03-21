@@ -22,20 +22,27 @@ body,
     color: var.$primary;
   }
 }
-// .requirements,
-// .container,
-// .explanation {
-//   margin-inline: 4rem;
-// }
 
+.benefits,
 .requirements {
   padding: 30px;
-  background-color: var.$accent3;
   border-radius: 20px;
-  color: var.$text-light;
   margin: 10px;
+  margin-bottom: 25px;
+}
+
+.benefits {
+  background-color: var.$accent4;
+  color: #1a181e;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.requirements {
+  background-color: var.$accent3;
+  color: var.$text-light;
   box-shadow: 5px 5px 10px #161c1c;
 }
+
 footer,
 .sidebar {
   background: var.$accent1;
@@ -45,6 +52,7 @@ footer,
     color: var.$primary;
   }
 }
+
 .design-selection,
 .zen-resources,
 .design-archives {
@@ -57,10 +65,20 @@ footer,
     font-size: smaller;
     list-style: none;
   }
+  .designer-name {
+    color: var.$text-light;
+  }
 }
 
+// Start Larger Css
 @media (min-width: 768px) {
-  // Start Larger Css
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .zen-resources {
+    grid-column: 2/3;
+  }
   .container {
     display: flex;
     margin-inline: 2rem;
@@ -70,6 +88,11 @@ footer,
   .benefits:hover,
   .participation:hover {
     transform: scale(1.03);
+  }
+  .requirements,
+  .container,
+  .explanation {
+    margin-inline: 4rem;
   }
   .benefits,
   .participation {
@@ -87,6 +110,32 @@ footer,
     }
     a {
       color: var.$primary;
+    }
+  }
+
+  .design-selection ul {
+    display: flex;
+    line-height: 75px;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+  }
+  .design-selection:hover ul,
+  .design-selection li:hover ul {
+    animation-play-state: paused;
+  }
+  .design-selection li {
+    font-size: large;
+    margin-inline: 25px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
     }
   }
   // End Larger CSS
