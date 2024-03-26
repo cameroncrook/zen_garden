@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap");
-
 h2,
 h3,
 h4 {
@@ -8,6 +7,7 @@ h4 {
 }
 
 h1 {
+  font-family: "Oswald", serif;
   background: #1a181e;
   color: #f7f7f7;
   display: inline-block;
@@ -17,12 +17,12 @@ h1 {
 }
 
 h2 {
-  color: #f7f7f7;
-  font-weight: 900;
-  /* Heavy */
+  color: #1a181e;
+  font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
+  text-shadow: 6px 6px 5px rgba(80, 137, 145, 0.5);
 }
 
 h3 {
@@ -73,8 +73,14 @@ a:hover {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #f7f7f7;
-  padding: 15% 0;
+  color: #1a181e;
+  padding: 5% 5%;
+  width: 50%;
+  font-weight: bold;
+  line-height: 10px;
+  margin-left: 5px;
+  margin-bottom: 25px;
+  box-shadow: 7px 7px 10px 3px hsl(0, 0%, 20%);
 }
 
 .summary p:last-child {
@@ -84,23 +90,26 @@ a:hover {
 }
 
 .summary a {
-  color: #f7f7f7;
+  color: #1a181e;
 }
 
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
+  background-color: #f7f7f7;
   color: #1a181e;
-  margin-left: -30%;
-  padding: 5% 5% 5% 30%;
+  padding: 30px;
+  background-color: #25232b;
+  color: #f7f7f7;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 5px 9px 10px #161c1c;
 }
 
 .explanation {
   padding: 30px;
-  margin: 10px;
+  margin: 0px 5% 15px 5%;
   margin-bottom: 25px;
   background-color: #25232b;
   color: #f7f7f7;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 5px 5px 10px #161c1c;
 }
 
@@ -109,8 +118,42 @@ a:hover {
   text-transform: uppercase;
 }
 
+.participation {
+  padding: 30px;
+}
+
+.benefits {
+  padding: 30px;
+}
+
 .intro {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
+}
+
+.summary {
+  background-color: #d4af37;
+}
+
+[role=banner] > h1 {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+/*
+[role=banner] > h1:after{
+  content:"";
+  height:100%;
+  left:0;
+  top:0;
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: 1;
+}*/
+[role=banner] > h1:hover {
+  background-color: #508991;
 }
 
 html,

@@ -10,37 +10,54 @@
   }
 }
 .summary {
-  @include atoms.uppercase($text-light);
-  padding: 15% 0;
+  @include atoms.uppercase($text-dark);
+  padding: 5% 5%;
+  width:50%;
+  font-weight: bold;
+  line-height: 10px;
+  margin-left:5px;
+  margin-bottom: 25px;
+  box-shadow:$shadow-elevation-left;
   p:last-child {
     @include atoms.divider;
   }
   a {
-    color: $text-light; //in this case the link wants to be light instead of the default dark
+    color: $text-dark; //in this case the link wants to be light instead of the default dark
   }
 }
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
+  background-color:$accent2;
   color: $text-dark;
-  margin-left: -30%;
-  padding: 5% 5% 5% 30%;
+  padding: 30px;
+  background-color: $accent3;
+  color: $text-light;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 5px 9px 10px #161c1c;
 }
 
 // Supporting
 .explanation {
   // sizing and spacing
   padding: 30px;
-  margin: 10px;
+  margin: 0px 5% 15px 5%;
   margin-bottom: 25px;
 
   // styles
   background-color: $accent3;
   color: $text-light;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 5px 5px 10px #161c1c;
 
   h3 {
     font-size: larger;
     text-transform: uppercase;
   }
+}
+
+.participation {
+  padding: 30px;
+}
+
+.benefits {
+  padding: 30px;
 }

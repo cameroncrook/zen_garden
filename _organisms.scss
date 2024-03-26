@@ -1,3 +1,118 @@
+@use 'variables' as *;
+
 .intro {
-  padding: 5%;
+  padding: 5% 5% 0 5%;
+}
+.summary{
+  background-color: $primary;
+}
+
+[role=banner] > h1{
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  transition:all 1s;
+}
+/*
+[role=banner] > h1:after{
+  content:"";
+  height:100%;
+  left:0;
+  top:0;
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: 1;
+}*/
+[role=banner] > h1:hover{
+  background-color:$background-color;
+  //color:$text-dark;
+}
+
+html,
+body,
+.main-supporting {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: $accent2;
+  p {
+    font-family: $fonts-body;
+  }
+  h3 {
+    font-size: larger;
+    font-family: $fonts-headline;
+    text-transform: uppercase;
+  }
+  a {
+    color: $primary;
+  }
+}
+// .requirements,
+// .container,
+// .explanation {
+//   margin-inline: 4rem;
+// }
+
+.requirements {
+  padding: 30px;
+  background-color: $accent3;
+  border-radius: 20px;
+  color: $text-light;
+  margin: 10px;
+  box-shadow: 5px 5px 10px #161c1c;
+}
+footer,
+.sidebar {
+  background: $accent1;
+  color: $text-light;
+  padding: 20px;
+  a {
+    color: $primary;
+  }
+}
+.design-selection,
+.zen-resources,
+.design-archives {
+  h3 {
+    font-family: $fonts-headline;
+    font-size: medium;
+  }
+  li {
+    font-family: $fonts-body;
+    font-size: smaller;
+    list-style: none;
+  }
+}
+
+@media (min-width: 768px) {
+  // Start Larger Css
+  .container {
+    display: flex;
+    margin-inline: 2rem;
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+  .benefits:hover,
+  .participation:hover {
+    transform: scale(1.03);
+  }
+  .benefits,
+  .participation {
+    flex: 1;
+    padding: 30px;
+    background-color: $accent4;
+    border-radius: 20px;
+    color: $accent1;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    h3 {
+      font-size: larger;
+      font-family: "Oswald";
+      text-transform: uppercase;
+    }
+    a {
+      color: $primary;
+    }
+  }
+
 }
