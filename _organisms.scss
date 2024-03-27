@@ -101,15 +101,16 @@ footer,
   // Start Larger Css
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
   }
 
   .design-selection {
     width: auto;
   }
 
-  .zen-resources {
-    grid-column: 2/3;
+  .zen-resources,
+  .design-archives {
+    grid-column: 1/2;
   }
 
   .container {
@@ -140,32 +141,32 @@ footer,
       color: $primary;
     }
   }
-  .design-selection ul {
-    display: flex;
-    line-height: 75px;
+  #design-selection{
     width: 100%;
-    overflow: auto;
+    position: relative;
+    overflow: hidden;
     white-space: nowrap;
-    animation: scroll 30s linear infinite;
   }
-
-  .design-selection:hover ul,
-  .design-selection li:hover ul {
-    animation-play-state: paused;
-  }
-
-  .design-selection li {
-    font-size: large;
-    margin-inline: 25px;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+#design-selection ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  white-space: nowrap;
+  animation: loop 30s linear infinite;
+}
+.design-selection li{
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e2e8f0;
+  font-size: .9rem;
+  padding: 0.7rem 1rem;
+  margin: 0rem 1rem;
+  white-space: nowrap;  
+}
+@keyframes loop {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
 }
