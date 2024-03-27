@@ -47,9 +47,12 @@ body,
     color: $primary;
   }
 }
-.requirements,
-.container,
-.explanation {
+
+.supporting {
+  padding: 0 5% 0 5%;
+}
+
+.container{
   margin-inline: 4rem;
 }
 
@@ -58,18 +61,21 @@ body,
   background-color: $accent3;
   border-radius: 20px;
   color: $text-light;
-  margin: 10px;
   box-shadow: 5px 5px 10px #161c1c;
 }
 footer,
 .sidebar {
-  background: $accent1;
   color: $text-light;
   padding: 20px;
   a {
     color: $primary;
   }
 }
+
+.sidebar {
+  background-color: $accent1;
+}
+
   .design-selection h3,
   .zen-resources h3,
   .design-archives h3 {

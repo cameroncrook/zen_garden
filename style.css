@@ -99,8 +99,6 @@ a:hover {
 
 .explanation {
   padding: 30px;
-  margin: 0px 5% 15px 5%;
-  margin-bottom: 25px;
   background-color: #25232b;
   color: #f7f7f7;
   border-radius: 0 0 20px 20px;
@@ -174,9 +172,11 @@ body a,
   color: #d4af37;
 }
 
-.requirements,
-.container,
-.explanation {
+.supporting {
+  padding: 0 5% 0 5%;
+}
+
+.container {
   margin-inline: 4rem;
 }
 
@@ -185,19 +185,21 @@ body a,
   background-color: #25232b;
   border-radius: 20px;
   color: #f7f7f7;
-  margin: 10px;
   box-shadow: 5px 5px 10px #161c1c;
 }
 
 footer,
 .sidebar {
-  background: #1a181e;
   color: #f7f7f7;
   padding: 20px;
 }
 footer a,
 .sidebar a {
   color: #d4af37;
+}
+
+.sidebar {
+  background-color: #1a181e;
 }
 
 .design-selection h3,
@@ -286,4 +288,6 @@ footer a,
       transform: translateX(-100%);
     }
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
