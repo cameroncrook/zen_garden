@@ -108,8 +108,9 @@ footer,
     width: auto;
   }
 
-  .zen-resources {
-    grid-column: 2/3;
+  .zen-resources,
+  .design-archives {
+    grid-column: 1/2;
   }
 
   .container {
