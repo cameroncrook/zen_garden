@@ -101,7 +101,7 @@ footer,
   // Start Larger Css
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
   }
 
   .design-selection {
@@ -141,10 +141,13 @@ footer,
       color: $primary;
     }
   }
+  .design-selection nav{
+    overflow-x:clip;
+  }
   .design-selection ul {
     display: flex;
     line-height: 75px;
-    width: 100%;
+    width: 160%;
     overflow: auto;
     white-space: nowrap;
     animation: scroll 30s linear infinite;

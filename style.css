@@ -222,7 +222,7 @@ footer a,
 @media (min-width: 768px) {
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100%;
   }
   .design-selection {
     width: auto;
@@ -261,10 +261,13 @@ footer a,
   .participation a {
     color: #d4af37;
   }
+  .design-selection nav {
+    overflow-x: clip;
+  }
   .design-selection ul {
     display: flex;
     line-height: 75px;
-    width: 100%;
+    width: 160%;
     overflow: auto;
     white-space: nowrap;
     animation: scroll 30s linear infinite;
