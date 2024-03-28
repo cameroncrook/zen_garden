@@ -109,16 +109,13 @@ a:hover {
   text-transform: uppercase;
 }
 
-.participation {
-  padding: 30px;
-}
-
+.participation,
 .benefits {
   padding: 30px;
 }
 
 .intro {
-  padding: 5% 5% 0 5%;
+  padding: 5% 7% 0 7%;
 }
 
 .summary {
@@ -173,7 +170,10 @@ body a,
 }
 
 .supporting {
-  padding: 0 5% 0 5%;
+  padding: 0 7% 0 7%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .requirements {
@@ -233,7 +233,6 @@ footer a,
   }
   .container {
     display: flex;
-    margin-inline: 2rem;
     gap: 2rem;
     margin-block: 2rem;
   }
@@ -275,6 +274,9 @@ footer a,
     white-space: nowrap;
     animation: loop 30s linear infinite;
   }
+  #design-selection ul:hover {
+    animation-play-state: paused;
+  }
   .design-selection li {
     display: flex;
     align-items: center;
@@ -293,4 +295,6 @@ footer a,
       transform: translateX(-50%);
     }
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

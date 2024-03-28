@@ -1,5 +1,5 @@
-@use 'variables' as *;
-@use 'atoms';
+@use "variables" as *;
+@use "atoms";
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
@@ -12,12 +12,12 @@
 .summary {
   @include atoms.uppercase($text-dark);
   padding: 5% 5%;
-  width:50%;
+  width: 50%;
   font-weight: bold;
   line-height: 10px;
-  margin-left:5px;
+  margin-left: 5px;
   margin-bottom: 25px;
-  box-shadow:$shadow-elevation-left;
+  box-shadow: $shadow-elevation-left;
   p:last-child {
     @include atoms.divider;
   }
@@ -50,10 +50,7 @@
   }
 }
 
-.participation {
-  padding: 30px;
-}
-
+.participation,
 .benefits {
   padding: 30px;
 }
