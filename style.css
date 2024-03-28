@@ -99,6 +99,8 @@ a:hover {
 
 .explanation {
   padding: 30px;
+  margin-left: 7%;
+  margin-right: 7%;
   background-color: #25232b;
   color: #f7f7f7;
   border-radius: 0 0 20px 20px;
@@ -170,7 +172,6 @@ body a,
 }
 
 .supporting {
-  padding: 0 7% 0 7%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -178,6 +179,7 @@ body a,
 
 .requirements {
   padding: 30px;
+  margin: 0 7% 0 7%;
   background-color: #25232b;
   border-radius: 20px;
   color: #f7f7f7;
@@ -192,6 +194,11 @@ footer,
 footer a,
 .sidebar a {
   color: #d4af37;
+}
+
+footer {
+  background-color: #1a181e;
+  width: 100vw;
 }
 
 .sidebar {
@@ -226,6 +233,12 @@ footer a,
   }
   .design-selection {
     width: auto;
+  }
+  .participation {
+    margin-left: 7%;
+  }
+  .benefits {
+    margin-right: 7%;
   }
   .zen-resources,
   .design-archives {

@@ -49,7 +49,7 @@ body,
 }
 
 .supporting {
-  padding: 0 7% 0 7%;
+  // padding: 0 7% 0 7%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -57,6 +57,7 @@ body,
 
 .requirements {
   padding: 30px;
+  margin: 0 7% 0 7%;
   background-color: $accent3;
   border-radius: 20px;
   color: $text-light;
@@ -69,6 +70,11 @@ footer,
   a {
     color: $primary;
   }
+}
+
+footer {
+  background-color: $accent1;
+  width: 100vw;
 }
 
 .sidebar {
@@ -105,6 +111,13 @@ footer,
 
   .design-selection {
     width: auto;
+  }
+
+  .participation {
+    margin-left: 7%;
+  }
+  .benefits {
+    margin-right: 7%;
   }
 
   .zen-resources,
