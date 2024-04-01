@@ -36,7 +36,7 @@
 // Supporting
 .explanation {
   // sizing and spacing
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
   margin-left: 7%;
   margin-right: 7%;
 
@@ -55,4 +55,9 @@
 .participation,
 .benefits {
   padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #1a181e;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 0 7% 0 7%;
 }
