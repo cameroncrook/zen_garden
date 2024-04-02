@@ -24,6 +24,10 @@
   padding-top: 1.5em;
 }
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+body{
+  background-image: linear-gradient(rgba(240, 248, 255, .90), rgba(240, 248, 255, .90)), url(bgtesselation.png);
+}
+
 h2,
 h3,
 h4 {

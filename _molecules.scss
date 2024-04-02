@@ -12,7 +12,7 @@
 .summary {
   @include atoms.uppercase($text-dark);
   padding: 5% 5%;
-  width: 50%;
+  width: clamp(210px, 50%, 75%);
   font-weight: bold;
   line-height: 10px;
   margin-left: 5px;

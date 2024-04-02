@@ -75,6 +75,11 @@ footer,
 footer {
   background-color: $accent1;
   width: 100vw;
+  font-family:$fonts-headline;
+}
+.zen-resources::after{
+  content:'Image by starline on Freepik, edited by Melissa Heppler';
+  font-family:$fonts-headline;
 }
 
 .sidebar {
