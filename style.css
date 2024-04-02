@@ -102,7 +102,7 @@ a:hover {
 }
 
 .explanation {
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
   margin-left: 7%;
   margin-right: 7%;
   background-color: #25232b;
@@ -118,6 +118,11 @@ a:hover {
 .participation,
 .benefits {
   padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #1a181e;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 0 7% 0 7%;
 }
 
 .intro {
@@ -244,12 +249,6 @@ footer {
   .design-selection {
     width: auto;
   }
-  .participation {
-    margin-left: 7%;
-  }
-  .benefits {
-    margin-right: 7%;
-  }
   .zen-resources,
   .design-archives {
     grid-column: 1/2;
@@ -282,6 +281,12 @@ footer {
   .benefits a,
   .participation a {
     color: #d4af37;
+  }
+  .participation {
+    margin: 0 0 0 7%;
+  }
+  .benefits {
+    margin: 0 7% 0 0;
   }
   #design-selection {
     width: 100%;

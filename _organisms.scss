@@ -118,13 +118,6 @@ footer {
     width: auto;
   }
 
-  .participation {
-    margin-left: 7%;
-  }
-  .benefits {
-    margin-right: 7%;
-  }
-
   .zen-resources,
   .design-archives {
     grid-column: 1/2;
@@ -156,6 +149,12 @@ footer {
     a {
       color: $primary;
     }
+  }
+  .participation {
+    margin: 0 0 0 7%;
+  }
+  .benefits {
+    margin: 0 7% 0 0;
   }
   #design-selection {
     width: 100%;
